@@ -15,4 +15,4 @@ echo $SECRETS_DIR to $SECRETS_FILE_PATH/$USER_FILTER.tar.gz.enc
 
 mv $SECRETS_FILE_PATH/$USER_FILTER.tar.gz.enc $HOME/workspace/backup/$USER_FILTER-$(date +"%m_%d_%Y")
 
-tar cz . | openssl enc -des-ede3-cbc -iter 100 -e -out $SECRETS_FILE_PATH/$USER_FILTER.tar.gz.enc
+tar cz . | openssl enc -des-ede3-cbc -e -out $SECRETS_FILE_PATH/$USER_FILTER.tar.gz.enc
