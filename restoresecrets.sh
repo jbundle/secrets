@@ -18,4 +18,4 @@ cd $SECRETS_DIR
 
 echo $SECRETS_FILE_PATH/$USER_FILTER.tar.gz.enc to $SECRETS_DIR
 
-openssl des3 -d -pbkdf2 -in $SECRETS_FILE_PATH/$USER_FILTER.tar.gz.enc | tar xz
+openssl enc -des-ede3-cbc -salt -d -in $SECRETS_FILE_PATH/$USER_FILTER.tar.gz.enc | tar xz
