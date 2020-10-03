@@ -12,8 +12,8 @@ fi
 
 export SECRETS_DIR=/run/secrets/$USER_FILTER
 sudo mkdir -p $SECRETS_DIR
-sudo chown $USER_FILTER $SECRETS_DIR
-sudo chgrp $USER_FILTER $SECRETS_DIR
+sudo chown $USER $SECRETS_DIR
+sudo chgrp $USER $SECRETS_DIR
 cd $SECRETS_DIR
 
 echo $SECRETS_FILE_PATH/$USER_FILTER.tar.gz.enc to $SECRETS_DIR
