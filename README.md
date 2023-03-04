@@ -4,7 +4,7 @@ Secret handling is simple and secure.
 
 All unencrypted secrets are stored in /run/secrets while in use.
 
-This directory is always a ephermal ram drive:
+This directory is always a ephemeral ram drive:
 
 - For Linux /run is available by default
 - For MacOS, read the mac shell script
